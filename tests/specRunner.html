@@ -1,0 +1,104 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+          "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Jasmine Spec Runner</title>
+
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
+    <script src="/Scripts/jquery-2.1.4.min.js"></script>
+
+    <!--<link href="Content/ui-bootstrap-csp.css" rel="stylesheet" />-->
+    <link href="../Content/toastr.min.css" rel="stylesheet" />
+    <link href="../Content/ng-grid.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Content/loading-bar.min.css">
+    <link href="../src/client/customCss/gcrclient.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="../Scripts/bootstrap.js"></script>
+
+    <!-- include Jasmine -->
+    <link href="../Content/jasmine/jasmine.css" rel="stylesheet" />
+    <img src="../Content/jasmine/jasmine_favicon.png" />
+    <script src="../Scripts/jasmine/jasmine.js"></script>
+    <script src="../Scripts/jasmine/jasmine-html.js"></script>
+    <script src="../Scripts/jasmine/boot.js"></script>
+
+    <!-- include angular and all its dependencies -->
+    <script src="../Scripts/angular.js"></script>
+    <!-- include angular mocks -->
+    <script src="../Scripts/angular-mocks.js"></script>
+
+    <!-- include angular extra modules -->
+    <script src="../Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="../Scripts/angular-jwt.min.js"></script>
+    <script src="../Scripts/angular-local-storage.min.js"></script>
+    <script src="../Scripts/angular-animate.min.js"></script>
+    <script src="../Scripts/angular-ui-router.min.js"></script>
+    <script src="../Scripts/toastr.min.js"></script>
+    <script src="../Scripts/ng-grid.min.js"></script>
+    <script src="../Scripts/loading-bar.min.js"></script>
+    <script src="../Scripts/moment.min.js"></script>
+
+    <!-- include source files here... -->
+    <script src="../src/client/app/app.module.js"></script>
+    <script src="../src/client/app/app.config.js"></script>
+    <script src="../src/client/common/common.module.js"></script>
+    <script src="../src/client/common/common.config.js"></script>
+    <script src="../src/client/common/services/commonService.js"></script>
+    <script src="../src/client/common/services/errorService.js"></script>
+    <script src="../src/client/common/services/localStorageService.js"></script>
+    <script src="../src/client/common/services/onlineStatusService.js"></script>
+    <script src="../src/client/app/services/sessionService.js"></script>
+    <script src="../src/client/common/services/addTokenService.js"></script>
+    <script src="../src/client/common/services/currentUserService.js"></script>
+    <script src="../src/client/common/services/formEncodeService.js"></script>
+    <script src="../src/client/common/services/loginRedirectService.js"></script>
+    <script src="../src/client/common/services/oauthService.js"></script>
+    <script src="../src/client/common/services/alertingService.js"></script>
+    <script src="../src/client/common/services/sideBarService.js"></script>
+    <script src="../src/client/common/filters/nullDate.js"></script>
+    <script src="../src/client/common/directives/alerts.js"></script>
+
+    <script src="../src/client/app/services/storeActivityService.js"></script>
+    <script src="../src/client/app/services/storeService.js"></script>
+    <script src="../src/client/app/home/home.js"></script>
+    <script src="../src/client/app/login/login.js"></script>
+    <script src="../src/client/app/layout/shell.js"></script>
+    <script src="../src/client/app/storeDemo/storeDemo.js"></script>
+    <script src="../src/client/app/storeMap/storeMap.js"></script>
+    <script src="../src/client/app/stores/storeSearch.js"></script>
+
+    <script src="../src/client/app/layout/index.js"></script>
+
+    <!-- include spec files here...-->
+    <!--<script src="mock.js"></script>
+    <script src="app.test.js"></script>
+    <script src="app.controllers.test.js"></script>
+    <script src="contact.test.js"></script>-->
+    <script src="index.spec.js"></script>
+
+
+    <!--<script type="text/javascript">
+        (function() {
+            var jasmineEnv = jasmine.getEnv();
+            jasmineEnv.updateInterval = 1000;
+            var htmlReporter = new jasmine.HtmlReporter();
+            jasmineEnv.addReporter(htmlReporter);
+            jasmineEnv.specFilter = function(spec) {
+                return htmlReporter.specFilter(spec);
+            };
+            var currentWindowOnload = window.onload;
+            window.onload = function() {
+                if (currentWindowOnload) {
+                    currentWindowOnload();
+                }
+                execJasmine();
+            };
+            function execJasmine() {
+                jasmineEnv.execute();
+            }
+        })();
+    </script>-->
+</head>
+<body>
+</body>
+</html>

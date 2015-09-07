@@ -1,0 +1,20 @@
+﻿<div ng-if="!isAuthenticated()">
+    <br />
+    <br />
+
+    <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4"></div>
+    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 form-group-lg">
+
+        <form name="loginForm" ng-submit="vm.login(loginForm);">
+            <div class="form-group">
+                <input name="username" type="text" placeholder="Username" class="form-control" ng-model="vm.username" required />
+            </div>
+            <div class="form-group">
+                <input name="password" type="password" placeholder="Password" class="form-control" ng-model="vm.password" required />
+            </div>
+            <input class="btn btn-info btn-block btn-lg" type="submit" value="Login" />
+        </form>
+        <br />
+        <alerts></alerts>
+    </div>
+</div>

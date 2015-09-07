@@ -1,0 +1,220 @@
+﻿a:link, a:visited { color: #034af3; }
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active { color: #034af3; }
+
+.logo-filler {
+    display: block;
+    width: 50px;
+}
+
+/* Mainbar */
+
+#mainBar {
+    display: block;
+    overflow: auto;
+    padding-top: 0px;
+    width: auto;
+}
+
+/* Sidebar */
+
+#sideBar {
+    /*float: left;*/
+    display: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.tabpage {
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+}
+
+div.hideSkiplink {
+    background-color: white;
+    border-bottom: black 1px solid;
+    /*background-color: #3a4f63;*/
+    padding: 0;
+}
+
+div.menu {
+    font-size: 1.6em;
+    font-weight: 900;
+    height: 60px;
+    padding: 0 0 0 4px;
+}
+
+div.menu ul {
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited {
+    background-color: #dde4ec;
+    border: 1px black solid;
+    border-radius: 10px 10px 0 0;
+    color: #465c71;
+    display: block;
+    line-height: 1.5em;
+    padding: 4px 4px 15px 4px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover {
+    background-color: #060;
+    color: #fff;
+    text-decoration: none;
+}
+
+div.menu ul li a:active {
+    background-color: #060;
+    color: #fff;
+    text-decoration: none;
+}
+
+div.menu ul li a.selected {
+    background-color: #060;
+    color: #fff;
+    text-decoration: none;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+.infoWindowContent {
+    border-top: 1px solid #ccc;
+    font-size: 14px !important;
+    padding-top: 10px;
+}
+
+h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.gridStyle {
+    border: 1px solid rgb(212, 212, 212);
+    height: 710px;
+}
+
+.gridStyle-5 {
+    border: 1px solid rgb(212, 212, 212);
+    height: 310px;
+}
+
+.grid-column-center { text-align: center; }
+
+.gridRowRed {
+    background: red;
+    color: white;
+}
+
+.gridRowYellow { background: yellow; }
+
+.ngCellText {
+    border-bottom: 1px solid rgb(212, 212, 212);
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.wideModalWindow { width: 100%; }
+
+#onlineStatus {
+    -moz-border-radius-bottomleft: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+    /*right:0px;
+    top:0px;*/
+    font-size: .7em;
+    padding: 6px;
+    position: relative;
+}
+
+.online { background-color: #060; }
+
+.offline { background-color: #900; }
+
+
+.thumbnails {
+    height: 150px;
+    padding: 10px;
+    width: 200px;
+}
+
+/* LOADING BAR */
+
+/* Overwrite some of the css that is coming from the loading-bar.css that way if we upgrade that package, the settings we set will remain */
+
+#loading-bar .bar {
+    height: 8px;
+    position: absolute;
+    top: 26px;
+}
+
+#loading-bar-spinner {
+    position: fixed;
+    top: 35px;
+}
+
+/***** MENU TABS *****/
+
+/* tab color */
+
+.nav-tabs > li > a {
+    background-color: #dde4ec;
+    border-color: #777777;
+    color: #465c71;
+}
+
+/* active tab color */
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #269abc;
+    border-color: #39b3d7;
+    color: #fff;
+}
+
+/* hover tab color */
+
+.nav-tabs > li > a:hover {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    color: #fff;
+}
+
+.errorMessage {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #465c71;
+}
+
+.appTitle {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #465c71;
+}
+
+table.header-table {
+    border:none;
+    width:100%;
+}

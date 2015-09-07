@@ -1,0 +1,26 @@
+﻿///<reference path="~/Scripts/jquery-2.1.4.js"/>
+///<reference path="~/Scripts/jasmine/jasmine.js"/>
+///<reference path="~/Scripts/angular.js"/>
+///<reference path="~/Scripts/angular-mocks.js"/>
+///<reference path="~/Scripts/angular-animate.js"/>
+///<reference path="~/Scripts/angular-jwt.js"/>
+///<reference path="~/Scripts/ng-grid.js"/>
+///<reference path="~/Scripts/angular-local-storage.js"/>
+///<reference path="~/Scripts/angular-ui/ui-bootstrap-tpls.js"/>
+///<reference path="~/Scripts/angular-ui-router.js"/>
+///<reference path="~/Scripts/moment.js"/>
+///<reference path="~/Scripts/toastr.js"/>
+///<reference path="~/Scripts/loading-bar.min.js"/>
+
+///<reference path="~/src/client/app/app.module.js"/>
+///<reference path="~/src/client/app/app.config.js"/>
+///<reference path="~/src/client/common/common.module.js"/>
+///<reference path="~/src/client/common/common.config.js"/>
+///<reference path="~/src/client/common/services/oauthService.js"/>
+///<reference path="~/src/client/common/services/currentUserService.js"/>
+///<reference path="~/src/client/common/services/errorService.js"/>
+///<reference path="~/src/client/common/services/alertingService.js"/>
+///<reference path="~/src/client/common/services/formEncodeService.js"/>
+///<reference path="~/src/client/common/services/commonService.js"/>
+///<reference path="~/src/client/common/services/onlineStatusService.js"/>
+///<reference path="~/src/client/app/layout/index.js"/>

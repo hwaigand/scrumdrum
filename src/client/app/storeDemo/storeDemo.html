@@ -1,0 +1,41 @@
+﻿<div ng-if="isAuthenticated()">
+
+    <table class="header-table">
+        <tr>
+            <td>
+                <h2>Store Demo List</h2>
+            </td>
+            <td class="pull-right"><button type="button" data-toggle="modal" class="btn btn-success btn-lg" ng-click="addStoreActivity();"><span>New Demo</span></button></td>
+        </tr>
+    </table>
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <table class="table table-responsive table-hover table-striped input-lg table-bordered" id="ActivityGridView1">
+                <thead>
+                <tr class="bg-primary">
+                    <th class="col-md-1">Date</th>
+                    <th class="col-md-2">Store</th>
+                    <!--<th class="col-md-2">Contacts Store</th>
+                    <th class="col-md-2">Merchandiser</th>
+                    <th class="col-md-2">Brand Ambassador</th>
+                    <th class="col-md-2">Activity Type</th>-->
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr ng-repeat="storeActivity in weeklyStoreDemos" ng-click="editStoreActivity(storeActivity)">
+                    <td>{{storeActivity.StoreActivityDate | nullDateFilter}}</td>
+                    <td>{{storeActivity.Store.StoreName}}</td>
+                    <!--<td>{{storeActivity.ContactsStore}}</td>
+                    <td>{{storeActivity.Merchandiser.Name}}</td>
+                    <td>{{storeActivity.BrandAmbassador}}</td>
+                    <td>{{storeActivity.StoreActivityType.StoreActivityTypeShortDescription}}</td>-->
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

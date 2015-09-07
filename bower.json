@@ -1,0 +1,19 @@
+{
+  "name": "ScrumDrum",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hwaigand/scrumdrum",
+  "authors": [
+    "hwaigand <hwaigand@yahoo.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "moduleType": [
+    "node"
+  ]
+}

@@ -1,0 +1,27 @@
+﻿<div class="row">
+    <div class="col-sm-12">
+        <h2>
+            Stores
+            <span class="badge">{{stores.length}}</span>
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <table class="table table-responsive table-hover input-lg" style="padding: 0;">
+        <tbody>
+        <tr ng-repeat="store in stores">
+            <td class="col-sm-4">
+                <a class="btn btn-info btn-block btn-lg" ng-click="storeDemo(store)">
+                    <div>{{store.StoreName}}</div>
+                    <div>{{store.Address}}</div>
+                    <div>{{store.City}}, {{store.State}} {{store.ZipCode}}</div>
+                </a>
+                <button type="button" id="btnMap" data-toggle="modal" class="btn btn-success btn-lg btn-block" ng-click="storeMap(store)">
+                    Map
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>

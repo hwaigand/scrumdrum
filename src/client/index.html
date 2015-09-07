@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="app" np-strict-di>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/images/GF-Logo.ico">
+
+    <base href="/">
+    <title>Store Demo</title>
+
+    <script>
+        // Must be first. IE10 mobile viewport fix
+        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            var mq = "@-ms-viewport{width:auto!important}";
+            msViewportStyle.appendChild(document.createTextNode(mq));
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+        }
+    </script>
+    <!-- build:js js/jq.js -->
+    <!-- inject:jscript:js -->
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
+    <script src="/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+
+    <!-- build:css css/lib.css -->
+    <!-- inject:css -->
+
+    <!--<link rel="stylesheet" href="/Content/bootstrap-theme.css">-->
+    <!--<link rel="stylesheet" href="/Content/bootstrap.css">-->
+    <!--<link rel="stylesheet" href="/Content/loading-bar.min.css">-->
+    <!--<link rel="stylesheet" href="/Content/ng-grid.css">-->
+    <!--<link rel="stylesheet" href="/Content/toastr.css">-->
+    <link rel="stylesheet" href="/Content/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="/Content/jasmine.css">
+    <link rel="stylesheet" href="/Content/loading-bar.min.css">
+    <link rel="stylesheet" href="/Content/ng-grid.min.css">
+    <link rel="stylesheet" href="/Content/toastr.min.css">
+    <link rel="stylesheet" href="/Content/ui-bootstrap-csp.css">
+   
+    <!-- endinject-->
+    <!-- endbuild -->
+
+    <!-- build:css css/app.css -->
+    <!-- inject:customCss:css -->
+    <link rel="stylesheet" href="/src/client/customCss/gcrclient.css">
+    <!-- endinject-->
+    <!-- endbuild -->
+
+    <!--Google Map-->
+    <script src="http://maps.google.com/maps/api/js?AIzaSyArIzwQ6khbQZdH5f8Y7ZfraUeQObRdRBM&sensor=false"></script>
+
+</head>
+
+<body ng-controller="IndexController">
+    <div id="onlineStatus"></div>
+    <div ng-include="'src/client/app/layout/shell.html'"></div>
+  
+    <!-- build:js js/lib.js -->
+    <!-- inject:vendor:js -->
+    <script src="/Scripts/angular.min.js"></script>
+    <script src="/Scripts/angular-animate.min.js"></script>
+    <script src="/Scripts/angular-jwt.min.js"></script>
+    <script src="/Scripts/angular-local-storage.min.js"></script>
+    <script src="/Scripts/angular-ui-router.min.js"></script>
+    <script src="/Scripts/loading-bar.min.js"></script>
+    <script src="/Scripts/moment-with-locales.min.js"></script>
+    <script src="/Scripts/moment.min.js"></script>
+    <script src="/Scripts/ng-grid.min.js"></script>
+    <script src="/Scripts/toastr.min.js"></script>
+    <script src="/Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+    <!-- build:js js/app.js -->
+    <!-- inject:js -->
+    <script src="/src/client/common/common.module.js"></script>
+    <script src="/src/client/app/app.module.js"></script>
+    <script src="/src/client/app/app.config.js"></script>
+    <script src="/src/client/app/home/home.js"></script>
+    <script src="/src/client/app/layout/index.js"></script>
+    <script src="/src/client/app/layout/shell.js"></script>
+    <script src="/src/client/app/login/login.js"></script>
+    <script src="/src/client/app/services/storeActivityService.js"></script>
+    <script src="/src/client/app/services/storeService.js"></script>
+    <script src="/src/client/app/storeMap/storeMap.js"></script>
+    <script src="/src/client/app/stores/storeSearch.js"></script>
+    <script src="/src/client/common/common.config.js"></script>
+    <script src="/src/client/common/controller/ModalDialogController.js"></script>
+    <script src="/src/client/common/directives/alerts.js"></script>
+    <script src="/src/client/common/directives/nullDate.js"></script>
+    <script src="/src/client/common/filters/nullDate.js"></script>
+    <script src="/src/client/common/filters/nullValue.js"></script>
+    <script src="/src/client/common/filters/tel.js"></script>
+    <script src="/src/client/common/filters/unsafe.js"></script>
+    <script src="/src/client/common/services/addTokenService.js"></script>
+    <script src="/src/client/common/services/alertingService.js"></script>
+    <script src="/src/client/common/services/commonService.js"></script>
+    <script src="/src/client/common/services/currentUserService.js"></script>
+    <script src="/src/client/common/services/errorService.js"></script>
+    <script src="/src/client/common/services/formEncodeService.js"></script>
+    <script src="/src/client/common/services/localStorageService.js"></script>
+    <script src="/src/client/common/services/loginRedirectService.js"></script>
+    <script src="/src/client/common/services/modalDialogService.js"></script>
+    <script src="/src/client/common/services/modalService.js"></script>
+    <script src="/src/client/common/services/oauthService.js"></script>
+    <script src="/src/client/common/services/onlineStatusService.js"></script>
+    <script src="/src/client/common/services/sideBarService.js"></script>
+    <!-- endinject -->
+    <!-- inject:templatecache -->
+    <!-- endinject -->
+    <!-- endbuild -->
+</body>
+</html>

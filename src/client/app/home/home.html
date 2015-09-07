@@ -1,0 +1,107 @@
+﻿
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle navbar-btn" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <button type="button" class="btn btn-lg navbar-btn" ng-click="toggleSideBar()">
+                <span class="glyphicon glyphicon-list-alt pull-left"></span>
+            </button>
+            &nbsp;
+            <a class="navbar-link navbar-btn" ui-sref="home">
+                <img src="/images/gf logo_small-40.png">
+            </a>
+            &nbsp;
+            <a class="navbar-link navbar-btn appTitle" ui-sref="home">
+                <label class="navbar-btn">
+                    Store Demo
+                </label>
+            </a>
+            &nbsp;
+
+        </div>
+
+        <div class="logo-filler"></div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+            <button type="button" class="btn btn-lg navbar-btn pull-right"
+                    data-ng-click="logOut();">
+                Logout
+            </button>
+        </div>
+    </nav>
+
+    <div id="sideBar" ng-hide="!showSideBar" ng-style="sideBarWidth">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-user"></span>
+                <label>
+                    {{session.user}}
+                </label>
+            </div>
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-calendar"></span>
+                <label>
+                    {{session.selectedDate}}
+                </label>
+            </div>
+        </div>
+
+        <div class="panel panel-info hidden-print">
+            <div class="panel-heading">
+                <button id="btnClearStore" type="button" data-ng-click="clearStore()" class="pull-right bg-info">
+                    <span class="glyphicon glyphicon-remove-sign"></span>
+                </button>
+                <div>
+                    <h5>Selected Store</h5>
+                </div>
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                <label>
+                    {{session.selectedStore.StoreName}}
+                </label>
+                <div>
+                    <label>Audit Date:</label>
+                    <label>{{session.selectedStore.DateLastAudit | nullDateFilter}}</label>
+                </div>
+            </div>
+            <div class="panel-heading">
+                <div>
+                    <h5>Merchandising Specialist</h5>
+                </div>
+                <span class="glyphicon glyphicon-user"></span>
+                <label>
+                    {{session.selectedMerchandiserName}}
+                </label>
+            </div>
+            <div class="panel-heading">
+                <div>
+                    <h5>Brand Ambassador</h5>
+                </div>
+                <span class="glyphicon glyphicon-user"></span>
+                <label>
+                    {{session.selectedBrandAmbassadorName}}
+                </label>
+                <input type="hidden" id="txtCurrentBrandAmbassadorId" ng-model="selectedBrandAmbassadorId" />
+            </div>
+        </div>
+
+        <div class="panel panel-danger">
+            <div class="panel-heading text-center">
+                <label>
+                    {{session.databaseName}}
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+    <div ng-hide="showSideBar">
+        <!-- Main Page Bar -->
+        <div id="mainBar" ng-style="mainBarWidth">
+            <div ui-view="mainPage" class="shuffle-animation container-fluid"></div>
+            <div ui-view="storeDemo" class="shuffle-animation container-fluid"></div>
+        </div>
+    </div>
